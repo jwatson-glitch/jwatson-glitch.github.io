@@ -24,8 +24,8 @@ var init = function (window) {
         var circles = []; 
 
         // TODO 2 : Create a function that draws a circle 
-        function drawCircle(); {
-
+        function drawCircle() {
+        
        // create the circle
       //randomCirileInArea(area, randomizeAlpha, addCross, borderColor, borderThickness, randomRoaialProps)
       circle = draw.randomCircleInArea(canvas, true, true, '#999', 2);
@@ -54,6 +54,17 @@ var init = function (window) {
         // TODO 7 : Use a loop to create multiple circles
 
 
+        
+      
+// TODO 5 YOUR CODE STARTS HERE //...
+// if the circle has gone out the right side of the screen then place it off-screen left if (circle.x > canvas.width circle. radius) { circle.xcircle.radius;
+}
+// T000 50) if the circle has gone out of the left side of the screen then place it off-screen right else if (/ Fill me in!*/){
+// TODO Sb) if the circle has gone out of the top side of the screen then place it off-screen bottom if (Fill me inl/) {
+}
+// TODO Sc) if the circle has gone out of the botton side of the screen then place it off-screen top else if (Fill me in!/){
+// YOUR TODO 5 CODE ENDS HERE /////////........
+
 
 
         ///////////////////
@@ -67,7 +78,11 @@ var init = function (window) {
         */
         function update() {
             // TODO 4 : Update the position of each circle using physikz.updatePosition()
-
+            physikz.updatePosition(circle[0]);
+            physikz.updatePosition(circle[1]);
+            physikz.updatePosition(circle[2]);
+            physikz.updatePosition(circle[3]);
+            physikz.updatePosition(circle[4]);
             
             // TODO 5 : Call game.checkCirclePosition() on your circles
            
