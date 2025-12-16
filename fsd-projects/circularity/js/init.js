@@ -6,7 +6,7 @@ physikz = window.opspark.racket.physikz,
 app = window.opspark.makeApp(),
 canvas = app.canvas,
 view = app.view,
-fps = draw.fps('#000');
+fps = draw.fps('#26ff00ff');
 window.opspark.makeGame = function() {
 window.opspark.game = {};
 var game = window.opspark.game;
@@ -20,8 +20,8 @@ var circles = [];
 
 // TODO 2 : Create a function that draws a circle
 function drawCircle() {
-circle = draw.randomCircleInArea(canvas, true, true, "#999", 2);
-physikz.addRandomVelocity(circle, canvas, 5, 75);
+circle = draw.randomCircleInArea(canvas, true, true, "#26ff00ff", 2);
+physikz.addRandomVelocity(circle, canvas, 80, 75);
 view.addChild(circle);
 circles.push(circle);
 }
